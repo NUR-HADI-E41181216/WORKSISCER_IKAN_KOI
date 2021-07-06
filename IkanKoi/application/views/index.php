@@ -15,72 +15,71 @@
                 <ol class="breadcrumb mb-4">
                     <li class="breadcrumb-item active">jenis Ikan</li>
                 </ol>
-                <div class="row">
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card bg-primary text-white mb-4">
-                            <div class="card-body">Mixed</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">View Details</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                <center>
+                    <div class="row">
+                        <div class="col-xl-4 col-sm-12 mb-3">
+                            <div class="card text-white">
+                                <button class="btn btn-warning d-flex align-items-center justify-content-between" data-toggle="modal" data-target="#view1">
+                                    <a class="small text-white stretched-link" style="text-decoration:none">
+                                        <h5>Kohaku</h5>
+                                    </a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-12 mb-3">
+                            <div class="card text-white">
+                                <button class="btn btn-success d-flex align-items-center justify-content-between">
+                                    <a class="small text-white stretched-link" style="text-decoration:none">
+                                        <h5>Sanke</h5>
+                                    </a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-12 mb-3">
+                            <div class="card text-white">
+                                <button class="btn btn-danger d-flex align-items-center justify-content-between">
+                                    <a class="small text-white stretched-link" style="text-decoration:none">
+                                        <h5>Sowa</h5>
+                                    </a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-12 mb-3">
+                            <div class="card text-white">
+                                <button class="btn btn-secondary d-flex align-items-center justify-content-between">
+                                    <a class="small text-white stretched-link" style="text-decoration:none">
+                                        <h5>Shiro</h5>
+                                    </a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-12 mb-3">
+                            <div class="card text-white">
+                                <button class="btn btn-info d-flex align-items-center justify-content-between">
+                                    <a class="small text-white stretched-link" style="text-decoration:none">
+                                        <h5>Ogan</h5>
+                                    </a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-12 mb-3">
+                            <div class="card text-white">
+                                <button class="btn btn-dark d-flex align-items-center justify-content-between">
+                                    <a class="small text-white stretched-link" style="text-decoration:none">
+                                        <h5>Yamabuki</h5>
+                                    </a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card bg-warning text-white mb-4">
-                            <div class="card-body">Kohaku</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">View Details</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card bg-success text-white mb-4">
-                            <div class="card-body">Sanke</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">View Details</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card bg-danger text-white mb-4">
-                            <div class="card-body">Sowa</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">View Details</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card bg-secondary text-white mb-4">
-                            <div class="card-body">Shiro</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">View Details</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card bg-info text-white mb-4">
-                            <div class="card-body">Ogan</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">View Details</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="card bg-dark text-white mb-4">
-                            <div class="card-body">Yamabuki</div>
-                            <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">View Details</a>
-                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr />
+                    <hr />
+                </center>
                 <ol class="breadcrumb mb-4">
                     <li class="breadcrumb-item active">Indikator Kualitas Air</li>
                 </ol>
@@ -100,11 +99,11 @@
                     <div class="col-xl-4 col-md-6">
                         <div class="card bg-primary text-white mb-4">
                             <div class="card-body">
-                                Oksigen Terlarut (DO/Dissolved Oxygen)
+                                Total Dissolved Solid (TDS)
                                 <p>
-                                    Oksigen terlarut(Dissolved Oxygen/DO) adalah jumlah kandungan
-                                    oksigen terlarut dalam air yang berasal dari fotosintesis dan
-                                    absorbsi atmosfer/udara.
+                                    TDS adalah istilah untuk menandakan jumlah padatan terlarut dalam
+                                    air. TDS digambarkan dengan jumlah zat terlarut dalam Part Per Million
+                                    (PPM) atau sama dengan mg/L
                                 </p>
                             </div>
                         </div>
@@ -112,15 +111,16 @@
                     <div class="col-xl-4 col-md-6">
                         <div class="card bg-primary text-white mb-4">
                             <div class="card-body">
-                                Salinitas
+                                Oksigen Terlarut (DO/Dissolved Oxygen)
                                 <p>
-                                    Salinitas atau keasinan adalah tingkat keasinan atau kadar garam
-                                    terlarut dalam air. Kandungan garam didefinisikan air tawar ketika
-                                    kadar garamnya kurang dari 0,05%.
+                                    Oksigen terlarut(Dissolved Oxygen/DO) adalah salah satu parameter penting dalam
+                                    analisis kualitas air yang diukur dalam bentuk konsentrasi jumlah oksigen yang tersedia
+                                    dalam air
                                 </p>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <center>
@@ -140,6 +140,48 @@
     </div>
     <!-- JS MEMANGGIL JS YANG ADA DI includes/js.php -->
     <?php $this->load->view("includes/js.php") ?>
+
+    <form action="<?= base_url() ?>index/view1" method="post">
+        <div class="modal fade" id="view1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add New Product</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label>Product Name</label>
+                            <input type="text" class="form-control" name="product_name" placeholder="Product Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Price</label>
+                            <input type="text" class="form-control" name="product_price" placeholder="Product Price">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Category</label>
+                            <select name="product_category" class="form-control">
+                                <option value="">-Select-</option>
+                                <?php foreach ($category as $row) : ?>
+                                    <option value="<?= $row->category_id; ?>"><?= $row->category_name; ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 </body>
 
 </html>
