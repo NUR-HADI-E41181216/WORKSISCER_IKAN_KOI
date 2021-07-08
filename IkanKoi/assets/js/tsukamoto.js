@@ -166,7 +166,7 @@ $(function(){
 		if(alfa > 0 && alfa < 1){
 			return (900 - alfa * 600);
 		}else if(alfa == 1){
-			return 200;
+			return 300;
 		}else{
 			return 900;
 		}
@@ -179,11 +179,11 @@ $(function(){
 	*/
 	function hargaMahal(alfa){
 		if(alfa > 0 && alfa < 1){
-			return (200 + alfa * 600);
+			return (300 + alfa * 600);
 		}else if(alfa == 1){
 			return 900;
 		}else{
-			return 200;
+			return 300;
 		}
 	}
 	
