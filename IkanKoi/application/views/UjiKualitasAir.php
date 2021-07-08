@@ -13,7 +13,7 @@
 
                 //untuk menampilkan hasil
                 $('#score').val(nilaiHasil());
-                $('#hasil').val(nilaiHasil());
+                $('#hasil').val(gradeHasil());
                 $('#koh').val(gradeKoh());
                 $('#sow').val(gradeSow());
                 $('#san').val(gradeSow());
