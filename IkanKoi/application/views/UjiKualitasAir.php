@@ -12,7 +12,14 @@
                 var z = new Array(64);
 
                 //untuk menampilkan hasil
+                $('#score').val(nilaiHasil());
                 $('#hasil').val(nilaiHasil());
+                $('#koh').val(gradeKoh());
+                $('#sow').val(gradeSow());
+                $('#san').val(gradeSow());
+                $('#shi').val(gradeShi());
+                $('#oga').val(gradeOga());
+                $('#yam').val(gradeOga());
 
                 //untuk menampilkan tabel alfa dan z setiap aturan
                 var z_result = "";
@@ -593,6 +600,18 @@
                 }
             }
 
+            function gradeKoh(){
+                if(nilaiHasil() <= 201){
+                    return "Optimal (A)"
+                }else if(nilaiHasil() >= 200 && nilaiHasil() <= 300){
+                    return "Sedang (B)"
+                }else if(nilaiHasil() >= 300 && nilaiHasil() <= 400){
+                    return "Buruk (C)"
+                }else{
+                    return "Sangat Buruk (D)"
+                }
+            }
+
             function gradeSowaSanke(){
                 if(nilaiHasil() <= 200){
                     return "<p class='bold text-success'>Optimal (A)</p>"
@@ -602,6 +621,18 @@
                     return "<p class='bold text-warning'>Buruk (C)</p>"
                 }else{
                     return "<p class='bold text-danger'>Sangat Buruk (D)</p>"
+                }
+            }
+
+            function gradeSow(){
+                if(nilaiHasil() <= 200){
+                    return "Optimal (A)"
+                }else if(nilaiHasil() >= 200 && nilaiHasil() <= 300){
+                    return "Sedang (B)"
+                }else if(nilaiHasil() >= 300 && nilaiHasil() <= 400){
+                    return "Buruk (C)"
+                }else{
+                    return "Sangat Buruk (D)"
                 }
             }
 
@@ -617,6 +648,18 @@
                 }
             }
 
+            function gradeShi(){
+                if(nilaiHasil() <= 232){
+                    return "Optimal (A)"
+                }else if(nilaiHasil() >= 233 && nilaiHasil() <= 350){
+                    return "Sedang (B)"
+                }else if(nilaiHasil() >= 300 && nilaiHasil() <= 440){
+                    return "Buruk (C)"
+                }else{
+                    return "Sangat Buruk (D)"
+                }
+            }
+
             function gradeOganYamabuki(){
                 if(nilaiHasil() <= 201){
                     return "<p class='bold text-success'>Optimal (A)</p>"
@@ -626,6 +669,18 @@
                     return "<p class='bold text-warning'>Buruk (C)</p>"
                 }else{
                     return "<p class='bold text-danger'>Sangat Buruk (D)</p>"
+                }
+            }
+
+            function gradeOga(){
+                if(nilaiHasil() <= 201){
+                    return "Optimal (A)"
+                }else if(nilaiHasil() >= 200 && nilaiHasil() <= 300){
+                    return "Sedang (B)"
+                }else if(nilaiHasil() >= 300 && nilaiHasil() <= 400){
+                    return "Buruk (C)"
+                }else{
+                    return "Sangat Buruk (D)"
                 }
             }
 
@@ -645,6 +700,7 @@
                         </ol>
                         <div class="row">
                             <fieldset> 
+                                <!-- form1 -->
                                 <form>
                                     <div class="row mt-4">
                                         <div class="col-lg-4 mb-4 text-center">
@@ -679,114 +735,126 @@
                                 <div class="text-center mb-4 mt-4">
                                     <button type="submit" id="proses" class="btn btn-primary proses">PROSES</button>
                                 </div>
-
-                                <div class="row text-center mt-5">
-                                    <h2 style="display: inline">Hasil Uji Kualitas Air : </h2>
-                                    <input type="text" name="hasil" id="hasil" class="hasil" style="font-size:180%; border:none; text-align:center;" hidden/>                                    
-                                </div>
-                                <p class="mb-4" id="cek"></p>
-                                
-                                <div class="col-md-8 text-center" style="margin-left:auto;margin-right:auto">
-                                    <table id="z-result" style="align: center">
-                                        
-                                    </table>  
-                                </div>
-                                <div class="col-md-8 text-center" style="margin-left:auto;margin-right:auto">
-                                    <table>
-                                        <thead>
-                                            <tr class="text-center">
-                                                <th>Parameter</th>
-                                                <th>Bagus</th>
-                                                <th>Sedang</th>
-                                                <th>Buruk</th>
-                                                <th>Sangat Buruk</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Suhu</td>
-                                                <td><input type="text" name="suhubaik" id="suhubaik" class="suhubaik" style=" border:none; text-align:center;"/></td>
-                                                <td><input type="text" name="suhusedang" id="suhusedang" class="suhusedang" style=" border:none; text-align:center;"/></td>
-                                                <td><input type="text" name="suhuburuk" id="suhuburuk" class="suhuburuk" style=" border:none; text-align:center;"/></td>
-                                                <td><input type="text" name="suhusangatburuk" id="suhusangatburuk" class="suhusangatburuk" style=" border:none; text-align:center;"/></td>
-                                            </tr>
-                                            <tr>
-                                                <td>TDS</td>
-                                                <td><input type="text" name="tdsbaik" id="tdsbaik" class="tdsbaik" style=" border:none; text-align:center;"/></td>
-                                                <td><input type="text" name="tdssedang" id="tdssedang" class="tdssedang" style=" border:none; text-align:center;"/></td>
-                                                <td><input type="text" name="tdsburuk" id="tdsburuk" class="tdsburuk" style=" border:none; text-align:center;"/></td>
-                                                <td><input type="text" name="tdssangatburuk" id="tdssangatburuk" class="tdssangatburuk" style=" border:none; text-align:center;"/></td>
-                                            </tr>
-                                            <tr>
-                                                <td>d.o</td>
-                                                <td><input type="text" name="dosbaik" id="dosbaik" class="dosbaik" style=" border:none; text-align:center;"/></td>
-                                                <td><input type="text" name="dossedang" id="dossedang" class="dossedang" style=" border:none; text-align:center;"/></td>
-                                                <td><input type="text" name="dosburuk" id="dosburuk" class="dosburuk" style=" border:none; text-align:center;"/></td>
-                                                <td><input type="text" name="dossangatburuk" id="dossangatburuk" class="dossangatburuk" style=" border:none; text-align:center;"/></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                                <div class="col-md-8 text-center" style="margin-left:auto;margin-right:auto">
-                                    <table class="table table-striped" id="dataTable" cellspacing="0">
-                                        <thead>
-                                            <tr class="text-center">
-                                                <th>Jenis Ikan Koi</th>
-                                                <th>Kualitas Air Untuk Ikan</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <p>Kohaku</p>
-                                                </td>
-                                                <td id="kohaku"></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Sanke</p>
-                                                </td>
-                                                <td id="sanke"></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Sowa</p>
-                                                </td>
-                                                <td id="sowa"></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Shiro</p>
-                                                </td>
-                                                <td id="shiro"></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Ogan</p>
-                                                </td>
-                                                <td id="ogan"></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <p>Yamabuki</p>
-                                                </td>
-                                                <td id="yamabuki"></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                <!-- form2 -->
+                                <form action="" methode="post">
+                                    <div class="row text-center mt-5">
+                                        <h2 style="display: inline">Hasil Uji Kualitas Air : </h2>
+                                        <input type="text" name="score" id="score" class="score" style="font-size:180%; border:none; text-align:center;"/>                                    
+                                        <input type="text" name="hasil" id="hasil" class="hasil" style="font-size:180%; border:none; text-align:center;"/>                                    
+                                    </div>
+                                    <p class="mb-4" id="cek"></p>
+                                    
+                                    <div class="col-md-8 text-center" style="margin-left:auto;margin-right:auto">
+                                        <table id="z-result" style="align: center">
+                                            
+                                        </table>  
+                                    </div>
+                                    <div class="col-md-8 text-center" style="margin-left:auto;margin-right:auto">
+                                        <table>
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th>Parameter</th>
+                                                    <th>Bagus</th>
+                                                    <th>Sedang</th>
+                                                    <th>Buruk</th>
+                                                    <th>Sangat Buruk</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Suhu</td>
+                                                    <td><input type="text" name="suhubaik" id="suhubaik" class="suhubaik" style=" border:none; text-align:center;"/></td>
+                                                    <td><input type="text" name="suhusedang" id="suhusedang" class="suhusedang" style=" border:none; text-align:center;"/></td>
+                                                    <td><input type="text" name="suhuburuk" id="suhuburuk" class="suhuburuk" style=" border:none; text-align:center;"/></td>
+                                                    <td><input type="text" name="suhusangatburuk" id="suhusangatburuk" class="suhusangatburuk" style=" border:none; text-align:center;"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>TDS</td>
+                                                    <td><input type="text" name="tdsbaik" id="tdsbaik" class="tdsbaik" style=" border:none; text-align:center;"/></td>
+                                                    <td><input type="text" name="tdssedang" id="tdssedang" class="tdssedang" style=" border:none; text-align:center;"/></td>
+                                                    <td><input type="text" name="tdsburuk" id="tdsburuk" class="tdsburuk" style=" border:none; text-align:center;"/></td>
+                                                    <td><input type="text" name="tdssangatburuk" id="tdssangatburuk" class="tdssangatburuk" style=" border:none; text-align:center;"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>d.o</td>
+                                                    <td><input type="text" name="dosbaik" id="dosbaik" class="dosbaik" style=" border:none; text-align:center;"/></td>
+                                                    <td><input type="text" name="dossedang" id="dossedang" class="dossedang" style=" border:none; text-align:center;"/></td>
+                                                    <td><input type="text" name="dosburuk" id="dosburuk" class="dosburuk" style=" border:none; text-align:center;"/></td>
+                                                    <td><input type="text" name="dossangatburuk" id="dossangatburuk" class="dossangatburuk" style=" border:none; text-align:center;"/></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="col-md-8 text-center" style="margin-left:auto;margin-right:auto">
+                                        <table class="table table-striped" id="dataTable" cellspacing="0">
+                                            <thead>
+                                                <tr class="text-center">
+                                                    <th>Jenis Ikan Koi</th>
+                                                    <th>Kualitas Air Untuk Ikan</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p>Kohaku</p>
+                                                        <input type="text" name="koh" id="koh" class="koh" style=" border:none; text-align:center;"/>
+                                                    </td>
+                                                    <td id="kohaku"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Sanke</p>
+                                                        <input type="text" name="san" id="san" class="san" style=" border:none; text-align:center;"/>
+                                                    </td>
+                                                    <td id="sanke"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Sowa</p>
+                                                        <input type="text" name="sow" id="sow" class="sow" style=" border:none; text-align:center;"/>
+                                                    </td>
+                                                    <td id="sowa"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Shiro</p>
+                                                        <input type="text" name="shi" id="shi" class="shi" style=" border:none; text-align:center;"/>
+                                                    </td>
+                                                    <td id="shiro"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Ogan</p>
+                                                        <input type="text" name="oga" id="oga" class="oga" style=" border:none; text-align:center;"/>
+                                                    </td>
+                                                    <td id="ogan"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>Yamabuki</p>
+                                                        <input type="text" name="yam" id="yam" class="yam" style=" border:none; text-align:center;"/>
+                                                    </td>
+                                                    <td id="yamabuki"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="text-center mb-4 mt-4">
+                                    <button type="submit" id="simpan" class="btn btn-primary simpan">SIMPAN</button>
+                                    </div>
+                                </form>
                                 </fieldset>
                             </div>
                         </div>
                     </main>
                     <footer class="py-4 bg-light mt-auto">
                         <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Uji coba kualitas air</div>
+                            <div class="d-flex align-items-center justify-content-between small">
+                                <div class="text-muted">Copyright &copy; Uji coba kualitas air</div>
+                            </div>
                         </div>
-                    </div>
-                </footer>
+                    </footer>
             </div>
         </div>
         <!-- JS MEMANGGIL JS YANG ADA DI includes/js.php -->
