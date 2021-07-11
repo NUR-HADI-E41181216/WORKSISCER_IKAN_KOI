@@ -18,63 +18,59 @@
                 <center>
                     <div class="row">
                         <div class="col-xl-4 col-sm-12 mb-3">
-                            <div class="card text-white">
-                                <button class="btn btn-warning d-flex align-items-center justify-content-between" data-toggle="modal" data-target="#view1">
-                                    <a class="small text-white stretched-link" style="text-decoration:none">
-                                        <h5>Kohaku</h5>
-                                    </a>
+
+                            <div class="card text-white ">
+                                <a href="<?= base_url() ?>index/view1" class="btn btn-warning text-white d-flex align-items-center justify-content-between">
+                                    <h5>Kohaku</h5>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </button>
+                                    <!--                                     
+                                    <button class="btn btn-warning d-flex align-items-center justify-content-between" href="<?= base_url() ?>index/view1">
+                                        <a class="small text-white stretched-link" style="text-decoration:none">
+                                            
+                                        </a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </button> -->
+                                </a>
                             </div>
                         </div>
                         <div class="col-xl-4 col-sm-12 mb-3">
                             <div class="card text-white">
-                                <button class="btn btn-success d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" style="text-decoration:none">
-                                        <h5>Sanke</h5>
-                                    </a>
+                                <a href="<?= base_url() ?>index/view2" class="btn btn-success text-white d-flex align-items-center justify-content-between">
+                                    <h5>Sanke</h5>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </button>
+                                </a>
                             </div>
                         </div>
                         <div class="col-xl-4 col-sm-12 mb-3">
                             <div class="card text-white">
-                                <button class="btn btn-danger d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" style="text-decoration:none">
-                                        <h5>Sowa</h5>
-                                    </a>
+                                <a href="<?= base_url() ?>index/view3" class="btn btn-danger text-white d-flex align-items-center justify-content-between">
+                                    <h5>Sowa</h5>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </button>
+                                </a>
                             </div>
                         </div>
                         <div class="col-xl-4 col-sm-12 mb-3">
                             <div class="card text-white">
-                                <button class="btn btn-secondary d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" style="text-decoration:none">
-                                        <h5>Shiro</h5>
-                                    </a>
+                                <a href="<?= base_url() ?>index/view4" class="btn btn-secondary text-white d-flex align-items-center justify-content-between">
+                                    <h5>Shiro</h5>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </button>
+                                </a>
                             </div>
                         </div>
                         <div class="col-xl-4 col-sm-12 mb-3">
                             <div class="card text-white">
-                                <button class="btn btn-info d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" style="text-decoration:none">
-                                        <h5>Ogan</h5>
-                                    </a>
+                                <a href="<?= base_url() ?>index/view5" class="btn btn-info text-white d-flex align-items-center justify-content-between">
+                                    <h5>Ogan</h5>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </button>
+                                </a>
                             </div>
                         </div>
                         <div class="col-xl-4 col-sm-12 mb-3">
                             <div class="card text-white">
-                                <button class="btn btn-dark d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" style="text-decoration:none">
-                                        <h5>Yamabuki</h5>
-                                    </a>
+                                <a href="<?= base_url() ?>index/view6" class="btn btn-dark text-white d-flex align-items-center justify-content-between">
+                                    <h5>Yamabuki</h5>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -120,9 +116,7 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
                 <center>
                     <button type="button" class="btn btn-success mb-3">UJI COBA SEKARANG</button>
                 </center>
@@ -140,48 +134,6 @@
     </div>
     <!-- JS MEMANGGIL JS YANG ADA DI includes/js.php -->
     <?php $this->load->view("includes/js.php") ?>
-
-    <form action="<?= base_url() ?>index/view1" method="post">
-        <div class="modal fade" id="view1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Add New Product</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-
-                        <div class="form-group">
-                            <label>Product Name</label>
-                            <input type="text" class="form-control" name="product_name" placeholder="Product Name">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Price</label>
-                            <input type="text" class="form-control" name="product_price" placeholder="Product Price">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Category</label>
-                            <select name="product_category" class="form-control">
-                                <option value="">-Select-</option>
-                                <?php foreach ($category as $row) : ?>
-                                    <option value="<?= $row->category_id; ?>"><?= $row->category_name; ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                        </div>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Save</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
 </body>
 
 </html>
