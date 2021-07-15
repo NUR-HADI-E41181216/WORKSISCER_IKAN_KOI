@@ -14,7 +14,11 @@
                             <li class="breadcrumb-item active">Fuzzy Tsukimoto</li>
                         </ol>
                         <div class="row">
-                            <p>PENJELASAN FUZZY</p>
+                            <p>Metode Fuzzy Tsukamoto adalah metode yang memiliki toleransi pada data dan sangat fleksibel.
+                             Kelebihan dari metode Tsukamoto yaitu bersifat intuitif dan dapat memberikan tanggapan berdasarkan informasi yang bersifat kualitatif, 
+                             tidak akurat, dan ambigu (Thamrin, 2012). Pada metode Tsukamoto, setiap Rule direpresentasikan dengan suatu himpunan Fuzzy dengan fungsi
+                             keanggotaan yang monoton isebut dengan fuzzifikasi. Sebagai hasilnya, keluaran hasil dari tiap-tiap aturan berupa nilai tegas (crisp) 
+                             berdasarkan α-predikat atau nilai minimum dari tiap Rule dan nilai z. Hasil akhirnya diperoleh dengan melakukan defuzzifikasi rata-rata berbobot (Pujiyanta, 2012)</p>
                         </div>
                     </div>
                 </main>
