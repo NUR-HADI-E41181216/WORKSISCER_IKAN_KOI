@@ -76,6 +76,37 @@
                     </div>
                     <hr />
                 </center>
+                <div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <i class="fas fa-chart-area me-1"></i>
+                            Fungsi Keanggotaan Suhu
+                        </div>
+                        <div class="card-body" id="suhu" style="margin: 0 auto"></div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-chart-area me-1"></i>
+                                Fungsi Keanggotaan TDS
+                            </div>
+                            <div class="card-body" id="tds"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-chart-bar me-1"></i>
+                                Fungsi Keanggotaan DO
+                            </div>
+                            <div class="card-body" id="dos"></div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
                 <ol class="breadcrumb mb-4">
                     <li class="breadcrumb-item active">Indikator Kualitas Air</li>
                 </ol>
@@ -117,10 +148,13 @@
                         </div>
                     </div>
                 </div>
-                <center>
-                    <button type="button" class="btn btn-success mb-3">UJI COBA SEKARANG</button>
-                </center>
 
+                <center>
+                    <a href="<?= base_url() ?>uji" class="btn btn-success mb-3 col-md-2">
+                        UJI COBA
+                        <div class="small text-white">SEKARANG!</div>
+                    </a>
+                </center>
             </div>
         </main>
         <footer class="py-4 bg-light mt-auto">
