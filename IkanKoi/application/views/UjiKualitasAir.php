@@ -102,7 +102,7 @@
                  *  @return nilai keanggotaan di himpunan suhu sedang
                  */
                 function suhuSedang() {
-                    if (suhu >= 27 && suhu <= 28 || suhu >= 20 && suhu <= 25) {
+                    if (suhu >= 27 && suhu <= 28 || suhu >= 20 && suhu <= 24) {
                         return 1;
                     } else if (suhu >= 17.5 && suhu <= 20) {
                         return (suhu - 17.5) / (20 - 17.5);
@@ -745,20 +745,20 @@
                             <input type="hidden" name="tanggal" value="<?php echo date("Y-m-d"); ?>">
                             <div class="row text-center mt-5">
                                 <h2 style="display: inline">Hasil Uji Kualitas Air : </h2>
-                                <input type="text" name="score" id="score" class="score" style="font-size:180%; border:none; text-align:center;" />
-                                <input type="text" name="hasil" id="hasil" class="hasil" style="font-size:180%; border:none; text-align:center;" />
+                                <input type="text" name="score" id="score" class="score" style="font-size:180%; border:none; text-align:center;" hidden/>
+                                <input type="text" name="hasil" id="hasil" class="hasil" style="font-size:180%; border:none; text-align:center;" hidden/>
                             </div>
                             <p class="mb-4" id="cek"></p>
                             <input type="text" name="suhuin" id="suhuin" class="suhuin" style=" border:none; text-align:center;" />
                             <input type="text" name="tdsin" id="tdsin" class="tdsin" style=" border:none; text-align:center;" />
                             <input type="text" name="dosin" id="dosin" class="dosin" style=" border:none; text-align:center;" />
 
-                            <div class="col-md-8 text-center" style="margin-left:auto;margin-right:auto">
+                            <div class="col-md-8 text-center" style="margin-left:auto;margin-right:auto" hidden>
                                 <table id="z-result" style="align: center">
 
                                 </table>
                             </div>
-                            <div class="col-md-8 text-center" style="margin-left:auto;margin-right:auto">
+                            <div class="col-md-8 text-center" style="margin-left:auto;margin-right:auto" hidden>
                                 <table>
                                     <thead>
                                         <tr class="text-center">

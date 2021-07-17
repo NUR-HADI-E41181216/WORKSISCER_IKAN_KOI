@@ -22,6 +22,10 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Fuzzy Tsukamoto
                             </a>
+                            <a class="nav-link" href="<?php echo site_url('CaraKerja') ?>">
+                                <div class="sb-nav-link-icon"><i class="fas fa-exclamation-square"></i></div>
+                                Cara Kerja
+                            </a>
                         </div>
                     </div>
                 </nav>
