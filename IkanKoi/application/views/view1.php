@@ -15,7 +15,7 @@
                 <div class="card-body">
                     <div class="form-group">
                         <label for="jenis_ikan">Jenis Ikan :</label>
-                        <input type="text" class="form-control" name="jenis_ikan" id="jenis_ikan" value="Ikan XXX" readonly>
+                        <input type="text" class="form-control" name="jenis_ikan" id="jenis_ikan" value="Ikan Koi Kohaku" readonly>
                     </div>
                     <div class="form-group">
                         <label for="deskripsi">Deskripsi :</label>

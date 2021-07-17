@@ -18,7 +18,9 @@
                             <h3>Detail Hasil Identifikasi Kualitas Air Kolam Ikan Koi</h3>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Garade : Optimal A</h4>
+                            <h4 class="card-title">Garade : <?php echo $uji['hasil'] ?></h4>
+                            <h4 class="card-title">Score : <?php echo $uji['score'] ?></h4>
+
                             <br>
                             <!-- <input type="text" value=""> -->
                             <table class="table">
