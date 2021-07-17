@@ -20,7 +20,7 @@
                             <div class="sb-sidenav-menu-heading">Tentang</div>
                             <a class="nav-link" href="<?php echo site_url('tentang') ?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                                Fuzzy Tsukimoto
+                                Fuzzy Tsukamoto
                             </a>
                         </div>
                     </div>
