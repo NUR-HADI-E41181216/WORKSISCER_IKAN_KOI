@@ -22,6 +22,7 @@
                             Data History Uji Coba
                         </div>
                         <div class="card-body">
+                            <!-- tabel ini digunakan untuk menampilkan data uji coba dari database -->
                             <table id="datatablesSimple" class="table table-striped">
                                 <thead>
                                     <tr>

@@ -15,21 +15,14 @@
                 <ol class="breadcrumb mb-4">
                     <li class="breadcrumb-item active">jenis Ikan</li>
                 </ol>
+                <!-- bagian ini berisi tombol yang mengarahkan pengguna menuju spesifikasi masing masing jenis ikan koi -->
                 <center>
                     <div class="row">
                         <div class="col-xl-4 col-sm-12 mb-3">
-
                             <div class="card text-white ">
                                 <a href="<?= base_url() ?>index/view1" class="btn btn-warning text-white d-flex align-items-center justify-content-between">
                                     <h5>Kohaku</h5>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    <!--                                     
-                                    <button class="btn btn-warning d-flex align-items-center justify-content-between" href="<?= base_url() ?>index/view1">
-                                        <a class="small text-white stretched-link" style="text-decoration:none">
-                                            
-                                        </a>
-                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                    </button> -->
                                 </a>
                             </div>
                         </div>
@@ -76,6 +69,7 @@
                     </div>
                     <hr />
                 </center>
+                <!-- bagian ini berisi fungsi keanggotaan fuzzy parameter suhu, tds, do dan keanggotaan baik, sedang, buruk, sangat buruk -->
                 <div>
                     <div class="card mb-4">
                         <div class="card-header">
@@ -107,6 +101,7 @@
                     </div>
                 </div>
                 <hr />
+                <!-- bagian ini berisi card penjelasan tentang 3 parameter -->
                 <ol class="breadcrumb mb-4">
                     <li class="breadcrumb-item active">Indikator Kualitas Air</li>
                 </ol>
@@ -148,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- bagian ini berisi tombol yang mengarahkan ke form uji coba -->
                 <center>
                     <a href="<?= base_url() ?>uji" class="btn btn-success mb-3 col-md-2">
                         UJI COBA

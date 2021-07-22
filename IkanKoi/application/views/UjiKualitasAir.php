@@ -592,6 +592,7 @@
                     }
                 }
 
+                // menentukan kesimpulan hasil uji kualitas air berdasarkan jenis ikan koi
                 function gradeKohaku() {
                     if (nilaiHasil() <= 201) {
                         return "<p class='bold text-success'>Optimal (A)</p>"
@@ -705,7 +706,7 @@
                 </ol>
                 <div class="row">
                     <fieldset>
-                        <!-- form1 -->
+                        <!-- form1 untuk mengirim inputan 3 parameter yang di uji coba-->
                         <form action="<?= base_url() . 'uji/insert'; ?>" method="post">
                             <div class="row mt-4">
                                 <div class="col-lg-4 mb-4 text-center">
@@ -740,7 +741,7 @@
                         <div class="text-center mb-4 mt-4">
                             <button type="submit" id="proses" class="btn btn-primary proses">PROSES</button>
                         </div>
-                        <!-- form2 -->
+                        <!-- form2 untuk mengirim inputan berupa data keanggotaan fuzzy, skor, dan hasil-->
                         <form action="<?= base_url() . 'uji/insert'; ?>" method="post">
                             <input type="hidden" name="tanggal" value="<?php echo date("Y-m-d"); ?>">
                             <div class="row text-center mt-5">
