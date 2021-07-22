@@ -745,13 +745,13 @@
                             <input type="hidden" name="tanggal" value="<?php echo date("Y-m-d"); ?>">
                             <div class="row text-center mt-5">
                                 <h2 style="display: inline">Hasil Uji Kualitas Air : </h2>
-                                <input type="text" name="score" id="score" class="score" style="font-size:180%; border:none; text-align:center;" hidden/>
-                                <input type="text" name="hasil" id="hasil" class="hasil" style="font-size:180%; border:none; text-align:center;" hidden/>
+                                <input type="text" name="score" id="score" class="score" style="font-size:180%; border:none; text-align:center;" hidden />
+                                <input type="text" name="hasil" id="hasil" class="hasil" style="font-size:180%; border:none; text-align:center;" hidden />
                             </div>
                             <p class="mb-4" id="cek"></p>
-                            <input type="text" name="suhuin" id="suhuin" class="suhuin" style=" border:none; text-align:center;" />
-                            <input type="text" name="tdsin" id="tdsin" class="tdsin" style=" border:none; text-align:center;" />
-                            <input type="text" name="dosin" id="dosin" class="dosin" style=" border:none; text-align:center;" />
+                            <input type="hidden" name="suhuin" id="suhuin" class="suhuin" style=" border:none; text-align:center;" />
+                            <input type="hidden" name="tdsin" id="tdsin" class="tdsin" style=" border:none; text-align:center;" />
+                            <input type="hidden" name="dosin" id="dosin" class="dosin" style=" border:none; text-align:center;" />
 
                             <div class="col-md-8 text-center" style="margin-left:auto;margin-right:auto" hidden>
                                 <table id="z-result" style="align: center">
@@ -807,42 +807,42 @@
                                         <tr>
                                             <td>
                                                 <p>Kohaku</p>
-                                                <input type="text" name="koh" id="koh" class="koh" style=" border:none; text-align:center;" />
+                                                <input type="text" name="koh" id="koh" class="koh" style=" border:none; text-align:center;" readonly />
                                             </td>
                                             <td id="kohaku"></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <p>Sanke</p>
-                                                <input type="text" name="san" id="san" class="san" style=" border:none; text-align:center;" />
+                                                <input type="text" name="san" id="san" class="san" style=" border:none; text-align:center;" readonly />
                                             </td>
                                             <td id="sanke"></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <p>Sowa</p>
-                                                <input type="text" name="sow" id="sow" class="sow" style=" border:none; text-align:center;" />
+                                                <input type="text" name="sow" id="sow" class="sow" style=" border:none; text-align:center;" readonly />
                                             </td>
                                             <td id="sowa"></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <p>Shiro</p>
-                                                <input type="text" name="shi" id="shi" class="shi" style=" border:none; text-align:center;" />
+                                                <input type="text" name="shi" id="shi" class="shi" style=" border:none; text-align:center;" readonly />
                                             </td>
                                             <td id="shiro"></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <p>Ogan</p>
-                                                <input type="text" name="oga" id="oga" class="oga" style=" border:none; text-align:center;" />
+                                                <input type="text" name="oga" id="oga" class="oga" style=" border:none; text-align:center;" readonly />
                                             </td>
                                             <td id="ogan"></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <p>Yamabuki</p>
-                                                <input type="text" name="yam" id="yam" class="yam" style=" border:none; text-align:center;" />
+                                                <input type="text" name="yam" id="yam" class="yam" style=" border:none; text-align:center;" readonly />
                                             </td>
                                             <td id="yamabuki"></td>
                                         </tr>
