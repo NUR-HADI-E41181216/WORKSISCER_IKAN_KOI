@@ -711,27 +711,30 @@
                             <input type="hidden" name="id_user" value="<?php echo $this->session->userdata("id_user") ?>">
                             <div class="row mt-4">
                                 <div class="col-lg-4 mb-4 text-center">
-                                    <label class="control-label text-center" for="suhu">Suhu</label>
+                                    <img src="<?= base_url() ?>assets/img/About/1.JPG" width="400" height="200" alt="">
+
                                     <div class="input-group text-right">
-                                        <input id="suhu" name="suhu" type="number" placeholder="Suhu" class="form-control input-md" require>
+                                        <input id="suhu" name="suhu" type="number" placeholder="Suhu Air Kolam" class="form-control input-md" require>
                                         <div class="input-group-append">
                                             <span class="input-group-text" id="basic-addon2">°C</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 mb-4 text-center">
-                                    <label class="control-label text-center" for="tds">TDS</label>
+                                    <img src="<?= base_url() ?>assets/img/About/2.JPG" width="400" height="200" alt="">
+
                                     <div class="input-group text-right">
-                                        <input id="tds" name="tds" type="number" placeholder="tds" class="form-control input-md" require>
+                                        <input id="tds" name="tds" type="number" placeholder="TDS (Konsentrasi Zat Terlarut)" class="form-control input-md" require>
                                         <div class="input-group-append">
                                             <span class="input-group-text" id="basic-addon2">ppm</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 mb-4 text-center">
-                                    <label class="control-label text-center" for="dos">d.o</label>
+                                    <img src="<?= base_url() ?>assets/img/About/3.JPG" width="400" height="200" alt="">
+
                                     <div class="input-group text-right">
-                                        <input id="dos" name="dos" type="number" placeholder="dos" class="form-control input-md" require>
+                                        <input id="dos" name="dos" type="number" placeholder="d.o (Kadar Oksigen Dalam Air)" class="form-control input-md" require>
                                         <div class="input-group-append">
                                             <span class="input-group-text" id="basic-addon2">ppm</span>
                                         </div>
@@ -810,42 +813,42 @@
                                         <tr>
                                             <td>
                                                 <p>Kohaku</p>
-                                                <input type="text" name="koh" id="koh" class="koh" style=" border:none; text-align:center;" readonly />
+                                                <input type="hidden" name="koh" id="koh" class="koh" style=" border:none; text-align:center;" readonly />
                                             </td>
                                             <td id="kohaku"></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <p>Sanke</p>
-                                                <input type="text" name="san" id="san" class="san" style=" border:none; text-align:center;" readonly />
+                                                <input type="hidden" name="san" id="san" class="san" style=" border:none; text-align:center;" readonly />
                                             </td>
                                             <td id="sanke"></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <p>Sowa</p>
-                                                <input type="text" name="sow" id="sow" class="sow" style=" border:none; text-align:center;" readonly />
+                                                <input type="hidden" name="sow" id="sow" class="sow" style=" border:none; text-align:center;" readonly />
                                             </td>
                                             <td id="sowa"></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <p>Shiro</p>
-                                                <input type="text" name="shi" id="shi" class="shi" style=" border:none; text-align:center;" readonly />
+                                                <input type="hidden" name="shi" id="shi" class="shi" style=" border:none; text-align:center;" readonly />
                                             </td>
                                             <td id="shiro"></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <p>Ogan</p>
-                                                <input type="text" name="oga" id="oga" class="oga" style=" border:none; text-align:center;" readonly />
+                                                <input type="hidden" name="oga" id="oga" class="oga" style=" border:none; text-align:center;" readonly />
                                             </td>
                                             <td id="ogan"></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <p>Yamabuki</p>
-                                                <input type="text" name="yam" id="yam" class="yam" style=" border:none; text-align:center;" readonly />
+                                                <input type="hidden" name="yam" id="yam" class="yam" style=" border:none; text-align:center;" readonly />
                                             </td>
                                             <td id="yamabuki"></td>
                                         </tr>
