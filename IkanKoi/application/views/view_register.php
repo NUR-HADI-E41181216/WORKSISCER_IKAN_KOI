@@ -33,20 +33,13 @@
                                             <input class="form-control" id="username" name="username" type="text" placeholder="" />
                                             <label for="username">Username</label>
                                         </div>
-                                        <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <div class="form-floating mb-3 mb-md-0">
-                                                    <input class="form-control" id="password" name="password" type="password" placeholder="Create a password" />
-                                                    <label for="password">Password</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-floating mb-3 mb-md-0">
-                                                    <input class="form-control" id="pass" name="pass" type="password" placeholder="Confirm password" />
-                                                    <label for="pass">Confirm Password</label>
-                                                </div>
+                                        <div class="form-floating mb-3">
+                                            <div class="form-floating mb-3 mb-md-0">
+                                                <input class="form-control" id="password" name="password" type="password" placeholder="" />
+                                                <label for="password">Password</label>
                                             </div>
                                         </div>
+
                                         <center>
                                             <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Daftar</button>
                                         </center>
