@@ -19,9 +19,12 @@
                                     <h3 class="text-center font-weight-light my-4">Login</h3>
                                 </div>
                                 <div class="card-body">
-                                    <form action="<?= base_url() . 'login/aksi_login'; ?>" method="post">
+                                    <form method="post" action="<?php echo base_url('login/aksi_login'); ?>">
+                                        <?php echo $this->session->flashdata('message'); ?>
+                                        <?php echo $this->session->flashdata('pesan'); ?>
+                                        <?php echo validation_errors(); ?>
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" name="username" id="inputEmail" type="text" placeholder="name@example.com" />
+                                            <input class="form-control" name="username" id="inputEmail" value="<?= set_value('username'); ?>" type="text" placeholder="name@example.com" />
                                             <label for="inputEmail">username</label>
                                         </div>
                                         <div class="form-floating mb-3">

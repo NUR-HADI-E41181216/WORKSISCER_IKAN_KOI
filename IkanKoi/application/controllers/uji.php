@@ -39,6 +39,7 @@ class uji extends CI_Controller
             'do'          => $this->input->post('dosin'),
             'score'       => $this->input->post('score'),
             'hasil'       => $this->input->post('hasil'),
+            'id_user'     => $this->input->post('id_user')
         );
 
         $data_suhu = array(
@@ -46,7 +47,8 @@ class uji extends CI_Controller
             'baik'          => $this->input->post('suhubaik'),
             'sedang'        => $this->input->post('suhusedang'),
             'buruk'         => $this->input->post('suhuburuk'),
-            'sangat_buruk'  => $this->input->post('suhusangatburuk')
+            'sangat_buruk'  => $this->input->post('suhusangatburuk'),
+            'id_user'     => $this->input->post('id_user')
         );
 
         $data_tds = array(
@@ -54,7 +56,8 @@ class uji extends CI_Controller
             'baik'          => $this->input->post('tdsbaik'),
             'sedang'        => $this->input->post('tdssedang'),
             'buruk'         => $this->input->post('tdsburuk'),
-            'sangat_buruk'  => $this->input->post('tdssangatburuk')
+            'sangat_buruk'  => $this->input->post('tdssangatburuk'),
+            'id_user'     => $this->input->post('id_user')
         );
 
         $data_dos = array(
@@ -62,7 +65,8 @@ class uji extends CI_Controller
             'baik'          => $this->input->post('dosbaik'),
             'sedang'        => $this->input->post('dossedang'),
             'buruk'         => $this->input->post('dosburuk'),
-            'sangat_buruk'  => $this->input->post('dossangatburuk')
+            'sangat_buruk'  => $this->input->post('dossangatburuk'),
+            'id_user'     => $this->input->post('id_user')
         );
 
         $data_hasil = array(
@@ -72,7 +76,8 @@ class uji extends CI_Controller
             'sowa'          => $this->input->post('sow'),
             'shiro'         => $this->input->post('shi'),
             'ogan'          => $this->input->post('oga'),
-            'yamabuki'      => $this->input->post('yam')
+            'yamabuki'      => $this->input->post('yam'),
+            'id_user'     => $this->input->post('id_user')
         );
 
         $this->M_data->insert($data, 'uji_coba');

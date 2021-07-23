@@ -102,7 +102,7 @@
                  *  @return nilai keanggotaan di himpunan suhu sedang
                  */
                 function suhuSedang() {
-                    if (suhu >= 27 && suhu <= 28 || suhu >= 20 && suhu <= 24) {
+                    if (suhu >= 27 && suhu <= 28 || suhu >= 20 && suhu <= 22.5) {
                         return 1;
                     } else if (suhu >= 17.5 && suhu <= 20) {
                         return (suhu - 17.5) / (20 - 17.5);
@@ -708,6 +708,7 @@
                     <fieldset>
                         <!-- form1 untuk mengirim inputan 3 parameter yang di uji coba-->
                         <form action="<?= base_url() . 'uji/insert'; ?>" method="post">
+                            <input type="hidden" name="id_user" value="<?php echo $this->session->userdata("id_user") ?>">
                             <div class="row mt-4">
                                 <div class="col-lg-4 mb-4 text-center">
                                     <label class="control-label text-center" for="suhu">Suhu</label>
@@ -743,6 +744,7 @@
                         </div>
                         <!-- form2 untuk mengirim inputan berupa data keanggotaan fuzzy, skor, dan hasil-->
                         <form action="<?= base_url() . 'uji/insert'; ?>" method="post">
+                            <input type="hidden" name="id_user" value="<?php echo $this->session->userdata("id_user") ?>">
                             <input type="hidden" name="tanggal" value="<?php echo date("Y-m-d"); ?>">
                             <div class="row text-center mt-5">
                                 <h2 style="display: inline">Hasil Uji Kualitas Air : </h2>

@@ -18,7 +18,7 @@ class register extends CI_Controller
         $this->load->library('session');
 
         $this->form_validation->set_rules('username', 'Username', 'required|min_length[5]|max_length[20]|is_unique[user.username]');
-        $this->form_validation->set_rules('password', 'Password', 'required|trim|min_length[6]');
+        $this->form_validation->set_rules('password', 'Password', 'required|trim|min_length[5]');
         $this->form_validation->set_rules('pass', 'Password', 'required|trim|matches[password]');
         $this->form_validation->set_rules('nama', 'Nama', 'trim|required|alpha_numeric_spaces|min_length[2]|max_length[20]');
 
@@ -39,7 +39,7 @@ class register extends CI_Controller
             $kode = 1;  //cek jika kode belum terdapat pada table
         }
         $batas = str_pad($kode, 6, "0", STR_PAD_LEFT);
-        $kodetampil = "UJC" . $batas;  //format kode
+        $kodetampil = "USR" . $batas;  //format kode
 
         if ($this->form_validation->run() == false) {
             $data['user'] = $this->Model_reg->getAll('user')->result();
