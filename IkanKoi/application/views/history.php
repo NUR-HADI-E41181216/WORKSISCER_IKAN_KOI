@@ -21,7 +21,7 @@
                             <i class="fas fa-table me-1"></i>
                             Data History Uji Coba
                         </div>
-                        <input type="text" id="idu" value="<?php echo $this->session->userdata("id_user") ?>">
+                        <input type="hidden" id="idu" value="<?php echo $this->session->userdata("id_user") ?>">
                         <div class="card-body">
 
                             <!-- tabel ini digunakan untuk menampilkan data uji coba dari database -->
