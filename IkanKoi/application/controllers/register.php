@@ -20,15 +20,9 @@ class Register extends CI_Controller
         $this->load->library('form_validation');
         $this->load->library('session');
 
-        $this->form_validation->set_rules('username', 'Username', 'required|min_length[5]|max_length[20]|is_unique[user.username]');
-        $this->form_validation->set_rules('password', 'Password', 'required|trim|min_length[5]');
-        $this->form_validation->set_rules('pass', 'Password', 'required|trim|matches[password]');
-        $this->form_validation->set_rules('nama', 'Nama', 'trim|required|alpha_numeric_spaces|min_length[2]|max_length[20]');
-
-        $this->form_validation->set_message('alpha_numeric_spaces', 'Mohon maaf, {field} harus diisi menggunakan huruf dan angka');
-        $this->form_validation->set_message('required', 'Mohon maaf, {field} harus diisi');
-        $this->form_validation->set_message('min_length', 'Mohon maaf, {field} harus diisi minimum {param} karakter');
-        $this->form_validation->set_message('matches', 'Mohon maaf, Password yang anda masukkan tidak cocok');
+        $this->form_validation->set_rules('username', 'Username', 'required|min_length[1]|max_length[20]');
+        $this->form_validation->set_rules('password', 'Password', 'required|trim');
+        $this->form_validation->set_rules('nama', 'Nama', 'trim|required|min_length[1]|max_length[20]');
 
         $this->db->select('RIGHT(user.id_user,6) as id_user', FALSE);
         $this->db->order_by('id_user', 'DESC');
