@@ -7,6 +7,9 @@ class uji extends CI_Controller
     {
         parent::__construct();
         $this->load->model('M_data');
+        if ($this->session->userdata('id_user') == '') {
+            redirect('login');
+        }
     }
 
     public function index()

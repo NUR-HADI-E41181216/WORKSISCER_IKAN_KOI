@@ -1,6 +1,6 @@
 <?php
 
-class login extends CI_Controller
+class Login extends CI_Controller
 {
 
     function __construct()
@@ -51,5 +51,11 @@ class login extends CI_Controller
                 redirect('login');
             }
         }
+    }
+
+    function logout()
+    {
+        $this->session->sess_destroy(); //menghentikan semua sesion
+        redirect(base_url('login')); // diarahkan ke form login
     }
 }

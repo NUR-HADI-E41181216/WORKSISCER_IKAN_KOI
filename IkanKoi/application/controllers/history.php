@@ -1,12 +1,15 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class history extends CI_Controller
+class History extends CI_Controller
 {
     public function __construct()
     {
         parent::__construct();
         $this->load->model('M_data');
+        if ($this->session->userdata('id_user') == '') {
+            redirect('login');
+        }
     }
 
     public function index()

@@ -12,7 +12,7 @@
         <div id="layoutAuthentication_content">
             <main>
                 <div class="container">
-                    <div class="row justify-content-center">
+                    <div class="row" style="float: right; margin-left: auto;margin-right: 0;">
                         <div class="col-lg-5">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
                                 <div class="card-header">
@@ -20,9 +20,8 @@
                                 </div>
                                 <div class="card-body">
                                     <form method="post" action="<?php echo base_url('login/aksi_login'); ?>">
-                                        <?php echo $this->session->flashdata('message'); ?>
-                                        <?php echo $this->session->flashdata('pesan'); ?>
                                         <?php echo validation_errors(); ?>
+                                        <?php echo $this->session->flashdata('message'); ?>
                                         <div class="form-floating mb-3">
                                             <input class="form-control" name="username" id="inputEmail" value="<?= set_value('username'); ?>" type="text" placeholder="name@example.com" />
                                             <label for="inputEmail">username</label>
@@ -32,7 +31,7 @@
                                             <label for="inputPassword">Password</label>
                                         </div>
                                         <div class="text-center">
-                                            <button type="submit" value="login" class="btn btn-primary simpan">SIMPAN</button>
+                                            <button type="submit" value="login" class="btn btn-primary simpan">LOGIN</button>
                                         </div>
                                     </form>
                                 </div>
