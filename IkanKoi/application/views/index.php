@@ -14,7 +14,7 @@
                 <h1 class="mt-4">Dashboard</h1>
                 <ol class="breadcrumb mb-4">
                     <li class="breadcrumb-item active">jenis Ikan</li>
-                    <input type="text" value="<?php echo $this->session->userdata("id_user") ?>">
+                    <input type="hidden" value="<?php echo $this->session->userdata("id_user") ?>">
                 </ol>
                 <!-- bagian ini berisi tombol yang mengarahkan pengguna menuju spesifikasi masing masing jenis ikan koi -->
                 <center>
