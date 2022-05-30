@@ -1,0 +1,5 @@
+Secara Individu, lakukan langkah praktikum yang sudah ada di BKPM minggu ke 14 tentang Github Workflow.
+
+Project dapat mengambil studi kasus dummy atau hasil skripsi. setiap individu harus berbeda dengan yang lain.
+
+Kumpulkan hasil step-by-step hasil praktikum dalam bentuk tautan Github yang dapat diakses
